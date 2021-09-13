@@ -20,5 +20,12 @@
 	 	<mappers>
 			<!--每次都要映射-->
 			<mapper resource="com/njj/dao/PersonDao.xml"></mapper>
+			<mapper resource="com/njj/dao/HumanDAO.xml"></mapper>
+			<mapper resource="com/njj/dao/OrdersDAO.xml"></mapper>
+			<mapper resource="com/njj/dao/CityDAO.xml"></mapper>
+			<mapper resource="com/njj/dao/DiquDAO.xml"></mapper>
+			<mapper resource="com/njj/dao/OrderDetailDAO.xml"></mapper>
+			<mapper resource="com/njj/dao/RoleDAO.xml"></mapper>
+			<mapper resource="com/njj/dao/PersonRoleDAO.xml"></mapper>
 		</mappers>
 </configuration>

@@ -1,6 +1,8 @@
 package com.njj.bean;
 
+
 import java.util.Date;
+import java.util.List;
 
 public class Person {
     private int id;
@@ -9,6 +11,11 @@ public class Person {
     private Date birthday;
     private String address;
     private int score;
+
+    //! 1对多在1旅 的实体类中写多力笑台
+    private List<Orders> ordersList;
+    //多对多 也要写多方的实体类的集合
+    private List<Role> roleList;
 
     public int getId() {
         return id;
@@ -58,6 +65,22 @@ public class Person {
         this.score = score;
     }
 
+    public List<Orders> getOrdersList() {
+        return ordersList;
+    }
+
+    public void setOrdersList(List<Orders> ordersList) {
+        this.ordersList = ordersList;
+    }
+
+    public List<Role> getRoleList() {
+        return roleList;
+    }
+
+    public void setRoleList(List<Role> roleList) {
+        this.roleList = roleList;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -67,6 +90,8 @@ public class Person {
                 ", birthday=" + birthday +
                 ", address='" + address + '\'' +
                 ", score=" + score +
+                ", ordersList=" + ordersList +
+                ", roleList=" + roleList +
                 '}';
     }
 }
